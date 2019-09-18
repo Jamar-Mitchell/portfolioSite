@@ -14,6 +14,7 @@ const Projects = () => (
     <div className="content">
       <Container style={{ "padding-bottom": "20px" }}>
         <Header
+          className="header"
           style={{
             "font-size": "50px",
             "font-family": "Montserrat",

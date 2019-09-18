@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
     />
 
@@ -50,7 +56,9 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <!-- <Header id="Header"></Header> -->
+    
     <Particles id="Particles"></Particles>
+    <Header id="Header2"></Header>
     <Portfolio id="Portfolio"></Portfolio>
 
     <!--
@@ -85,9 +93,23 @@
 <script src="vanta.fog.min.js"></script>
 <script>
   VANTA.FOG({
-    el: "Header",
+    el: "name of tag",
     highlightColor: 0x1c5231,
     midtoneColor: 0x11ff00,
     speed: 2.9
   });
 </script>
+
+<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin />
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin
+/>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin
+/>
+
+<script>var Alert = ReactBootstrap.Alert;</script>

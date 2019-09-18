@@ -2,14 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Header from "./Header";
+import Header2 from "./Header2";
 import Projects from "./Project.js";
 import Particle from "./particles";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<Projects />, document.getElementById("Portfolio"));
 ReactDOM.render(<Particle />, document.getElementById("Particles"));
+
+ReactDOM.render(<Header2 />, document.getElementById("Header2"));
+
+ReactDOM.render(<Projects />, document.getElementById("Portfolio"));
+
 //ReactDOM.render(<Header />, document.getElementById("Header"));
 
 // If you want your app to work offline and load faster, you can change
