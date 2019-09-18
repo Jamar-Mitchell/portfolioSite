@@ -1,48 +1,97 @@
 import React from "react";
-import "./Header.css";
+import { Container, Navbar, Nav } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faBehance
+} from "@fortawesome/free-brands-svg-icons";
+import "./index.css";
 
 function Header() {
   return (
-    <div className="Header ">
-      <nav class="navbar noback navbar-expand-lg fixed-top navbar-light ">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div className="content">
+      <Navbar
+        sticky="top"
+        variant="light"
+        style={{ float: "right", paddingRight: "100px" }}
+      >
+        <Navbar.Brand
+          href="#home"
+          style={{ color: "#006e6d", fontSize: "25px", fontWeight: "20px" }}
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <header className="header inner jumbotron padding">
-        <h1 class="display-4 intro">Jamar Mitchell</h1>
-        <p class="lead">
-          {" "}
-          Learning, overcoming challenges and solving new problems motivates me.{" "}
+          Jamar
+        </Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link
+            href="#About"
+            style={{ color: "#006e6d", fontSize: "25px", fontWeight: "30px" }}
+          >
+            About
+          </Nav.Link>
+          <Nav.Link
+            href="#Projects"
+            style={{ color: "#006e6d", fontSize: "25px", fontWeight: "30px" }}
+          >
+            Projects
+          </Nav.Link>
+          <Nav.Link
+            href="#Resume"
+            style={{ color: "#006e6d", fontSize: "25px", fontWeight: "30px" }}
+          >
+            Resume
+          </Nav.Link>
+        </Nav>
+      </Navbar>
+      <Container style={{ padding: "220px", width: "100%", height: "1000px" }}>
+        <h1 className="title">
+          Hey! <br /> I'm Jamar :)
+        </h1>
+        <p className="subheader">
+          I'm a Computer Engineering graduate and an aspiring Full Stack
+          Developer
         </p>
-      </header>
+        <div
+          style={{ paddingBottom: "200px", display: "block", float: "left" }}
+        >
+          <a
+            href="https://www.linkedin.com/in/jamar-mitchell-456b18b5/"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              style={{
+                fontSize: "70px",
+                color: "#006e6d",
+                paddingRight: "20px"
+              }}
+            />
+          </a>
+
+          <a href="https://github.com/Jamar-Mitchell" target="_blank">
+            <FontAwesomeIcon
+              icon={faGithub}
+              style={{
+                fontSize: "70px",
+                color: "#006e6d",
+                paddingRight: "20px"
+              }}
+            />
+          </a>
+
+          <a href="https://www.behance.net/jamarmitchell" target="_blank">
+            <FontAwesomeIcon
+              icon={faBehance}
+              style={{
+                fontSize: "70px",
+                color: "#006e6d",
+                paddingRight: "20px"
+              }}
+            />
+          </a>
+        </div>
+      </Container>
     </div>
   );
 }
