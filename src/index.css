@@ -64,6 +64,10 @@ code {
   transition: 0.3s;
 }
 
+mark {
+  background-color: #74dfdd;
+}
+
 .background {
   background-color: rgb(255, 255, 255);
   background-size: cover;

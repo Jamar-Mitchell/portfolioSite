@@ -18,6 +18,7 @@ const Projects = () => (
           style={{
             "font-size": "50px",
             "font-family": "Montserrat",
+            "padding-bottom": "20px",
             color: "#006E6D"
           }}
         >
